@@ -1,0 +1,70 @@
+.basket{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: fixed;
+    right: 0;
+    width: 420px;
+    height: 100vh;
+    background-color: #000;
+    z-index: 1000;
+    transform: translateX(+130%);
+    transition: all 0.3s ease-in-out;
+    .basket-container{
+        width: 90%;
+
+
+        .nadpis{
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+            margin: 20px 0;
+            font-size: 30px;
+            font-weight: 700;
+            color: #43FFD2;
+            text-transform: uppercase;
+            .close-button{
+                cursor: pointer;
+                background-color: none;
+                border-radius: 8px;
+                &:hover{
+                    background-color: rgb(46, 46, 46);
+                    
+                }
+            }
+    
+        }
+        .line{
+           
+            background-color: #555555;
+            height: 1px;
+            
+            
+        }
+
+
+    }
+    .blur{
+        // z-index: 1001;
+        position: absolute;
+        width: 100vw;
+        height: 100vh;
+        right: 420px;
+        z-index: 1000;
+        opacity: 0;
+        backdrop-filter: blur(5px);
+        transform: translateX(+130%);
+        transition: all 0.3s ease-in-out;
+    }
+    .active{
+        transform: translateX(0);
+        opacity: 100%;
+    
+    }
+
+}
+
+.active{
+    transform: translateX(0);
+
+}

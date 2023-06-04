@@ -1,0 +1,50 @@
+$zindexvar: -1;
+.main{
+    // background-color:  #282828;
+    width: 100%;
+    height: 100vh;
+    position: relative;
+}
+
+
+.decoration-green{ 
+    &1{ 
+        position: sticky;
+        width: 217.02px;
+        height: 173.93px;
+        left: -82px;
+        top: 116.24px;
+
+        background: #43FFD2;
+        filter: blur(125px);
+        transform: rotate(-71.86deg);
+        z-index: $zindexvar;
+        
+    }
+}
+.decoration-purple{
+
+    &1{
+        position: sticky;
+        width: 504.42px;
+        height: 360.44px;
+        left: 1141.4px;
+        top: -258px;
+
+        background: #7D2253;
+        filter: blur(125px);
+        transform: rotate(32.83deg);
+        z-index: $zindexvar;
+    }
+    &2{
+        position: sticky;
+        width: 589.85px;
+        height: 360.44px;
+        left: 240.4px;
+        top: 124px;
+
+        background: #7D2253;
+        filter: blur(125px);
+        transform: rotate(32.83deg);
+    }
+}
